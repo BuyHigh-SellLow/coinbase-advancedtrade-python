@@ -1,6 +1,5 @@
 from coinbase_advanced_trader.enhanced_rest_client import EnhancedRESTClient
 import logging
-from logger import setup_logging
 import json
 
 # Path to your JSON file
@@ -10,7 +9,6 @@ json_file_path = 'cdp_api_key.json'
 with open(json_file_path, 'r') as file:
     data = json.load(file)
 
-setup_logging()
 
 # Extract the API key
 api_key = data['name']
