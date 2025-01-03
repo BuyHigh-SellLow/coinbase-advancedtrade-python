@@ -21,6 +21,7 @@ try:
     amount = input("Enter the amount in USD to buy BTC: ")
 
     # Perform a limit buy
+    # BTC-USDC, XRP-USDC, PEPE-USDC, LTC-USDC
     response = client.fiat_limit_buy("BTC-USDC", amount)
     print("Status Code:", response.status_code)
     print("Headers:", response.headers)
